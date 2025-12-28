@@ -1,0 +1,7 @@
+{
+  "name": "Mr Tank Stand - Zimbabwe's Premier Water Storage Solutions",
+  "description": "Premium business website for Mr Tank Stand specializing in steel tank stands, water tanks, and professional installations across Zimbabwe.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
