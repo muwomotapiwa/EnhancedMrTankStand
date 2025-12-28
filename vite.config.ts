@@ -7,6 +7,9 @@ export default defineConfig(({ mode }) => {
     return {
       // Use relative base so the bundle works on GitHub Pages and when served from any path (including file/Live Server)
       base: './',
+      build: {
+        outDir: 'docs',
+      },
       server: {
         port: 3000,
         host: '0.0.0.0',
