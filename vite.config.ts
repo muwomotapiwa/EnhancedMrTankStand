@@ -5,8 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // Use repo name as base so GitHub Pages resolves assets correctly
-      base: mode === 'production' ? '/EnhancedMrTankStand/' : '/',
+      // Use relative base so the bundle works on GitHub Pages and when served from any path (including file/Live Server)
+      base: './',
       server: {
         port: 3000,
         host: '0.0.0.0',
