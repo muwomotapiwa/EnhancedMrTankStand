@@ -5,6 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      // Use repo name as base so GitHub Pages resolves assets correctly
+      base: mode === 'production' ? '/EnhancedMrTankStand/' : '/',
       server: {
         port: 3000,
         host: '0.0.0.0',
